@@ -38,7 +38,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """API""", """controllers.HomeController.index(postId:Option[Int] ?= None, id:Option[Int] ?= None, name:Option[String] ?= None, email:Option[String])"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """API""", """controllers.HomeController.index(postId:Option[Int] ?= None, id:Option[Int] ?= None, name:Option[String] ?= None, email:Option[String] ?= None)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -88,7 +88,7 @@ class Routes(
   
     // @LINE:7
     case controllers_HomeController_index0_route(params@_) =>
-      call(params.fromQuery[Option[Int]]("postId", Some(None)), params.fromQuery[Option[Int]]("id", Some(None)), params.fromQuery[Option[String]]("name", Some(None)), params.fromQuery[Option[String]]("email", None)) { (postId, id, name, email) =>
+      call(params.fromQuery[Option[Int]]("postId", Some(None)), params.fromQuery[Option[Int]]("id", Some(None)), params.fromQuery[Option[String]]("name", Some(None)), params.fromQuery[Option[String]]("email", Some(None))) { (postId, id, name, email) =>
         controllers_HomeController_index0_invoker.call(HomeController_0.index(postId, id, name, email))
       }
   
