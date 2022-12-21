@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/vineet/Read_data_from_Json_API/conf/routes,/home/vineet/Read_data_from_Json_API/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/vineet/Read_data_from_Json_API/conf/application.conf,/home/vineet/Read_data_from_Json_API/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/vineet/Read_data_from_Json_API/conf/logback.xml,/home/vineet/Read_data_from_Json_API/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/vineet/Read_data_from_Json_API/conf/messages,/home/vineet/Read_data_from_Json_API/target/scala-2.13/classes/messages)[0m
